@@ -509,24 +509,36 @@
         <section id="projects">
             <h2 class="section-title"><i class="fa-solid fa-folder-open"></i> Featured Projects</h2>
             
-            <!-- Major Project -->
-            <div class="card" style="margin-bottom: 1.5rem;">
-                <h3>01 — Enterprise Data Center Security Architecture <span style="font-size:0.8rem; color:var(--accent-cyan);">(Graduation Project)</span></h3>
-                <p>Designed and implemented a multi-layer security architecture for an enterprise data center incorporating Palo Alto, FortiGate, WAF, NDR, and DMZ using PNETLab.</p>
-                
-                <div class="highlight-box">
-                    <strong>Project Outcome:</strong> The environment was tested against <strong>54 attack payloads</strong>, generating <strong>158 security events</strong>. Implemented detection mechanisms successfully identified and blocked all malicious traffic.
-                </div>
+<!-- Major Project with Images -->
+<div class="card" style="margin-bottom: 1.5rem;">
+    <h3>01 — Enterprise Data Center Security Architecture <span style="font-size:0.8rem; color:var(--accent-cyan);">(Graduation Project)</span></h3>
+    <p>Designed and implemented a multi-layer security architecture for an enterprise data center incorporating Palo Alto, FortiGate, WAF, NDR, and DMZ using PNETLab.</p>
+    
+    <div class="highlight-box">
+        <strong>Project Outcome:</strong> The environment was tested against <strong>54 attack payloads</strong>, generating <strong>158 security events</strong>. Implemented detection mechanisms successfully identified and blocked all malicious traffic.
+    </div>
 
-                <div class="tech-tags">
-                    <span class="tech-tag">ELK Stack</span>
-                    <span class="tech-tag">Palo Alto</span>
-                    <span class="tech-tag">FortiGate</span>
-                    <span class="tech-tag">WAF</span>
-                    <span class="tech-tag">NDR</span>
-                    <span class="tech-tag">PNETLab</span>
-                </div>
-            </div>
+    <!-- Images Section -->
+    <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem;">
+        <div style="text-align: center;">
+            <img src="network-topology.jpg" alt="PNETLab Network Architecture" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color);">
+            <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 0.5rem;">PNETLab Network Topology</span>
+        </div>
+        <div style="text-align: center;">
+            <img src="siem-dashboard.png" alt="ELK SIEM Dashboard & Timeline" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color);">
+            <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 0.5rem;">ELK SIEM Correlated Alerts Timeline</span>
+        </div>
+    </div>
+
+    <div class="tech-tags" style="margin-top: 1.2rem;">
+        <span class="tech-tag">ELK Stack</span>
+        <span class="tech-tag">Palo Alto</span>
+        <span class="tech-tag">FortiGate</span>
+        <span class="tech-tag">WAF</span>
+        <span class="tech-tag">NDR</span>
+        <span class="tech-tag">PNETLab</span>
+    </div>
+</div>
 
             <!-- Other Projects Grid -->
             <div class="grid-2">
