@@ -371,6 +371,16 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            .hero-avatar {
+                width: 180px;
+                height: 180px;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
             .hero {
                 flex-direction: column-reverse;
                 text-align: center;
@@ -520,7 +530,7 @@
 
         <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
             <div style="text-align: center;">
-                <img src="network-topology.jpg" alt="PNETLab Network Architecture" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color);">
+                <img src="network-topology.jpg" loading="lazy" alt="PNETLab Network Architecture" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border-color);">
                 <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 0.5rem;">PNETLab Network Topology</span>
             </div>
             <div style="text-align: center;">
@@ -626,7 +636,7 @@
                     <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i>
                     <span>LinkedIn Profile</span>
                 </a>
-                <a href="https://github.com/meroOMohammed" target="_blank" class="contact-item">
+                <a href="https://github.com/meroOMohammed" target="_blank" rel="noopener noreferrer" class="contact-item">
                     <i class="fa-brands fa-github"></i>
                     <span>GitHub</span>
                 </a>
